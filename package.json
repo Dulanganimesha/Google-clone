@@ -1,11 +1,8 @@
 {
   "name": "google-clone",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "create google clone",
-  "keywords": [
-    "google",
-    "clone"
-  ],
+  "keywords": ["google","clone"],
   "license": "MIT",
   "author": "Dulanga nimesha <idulanganimesha@gmail.com>",
   "scripts": {
