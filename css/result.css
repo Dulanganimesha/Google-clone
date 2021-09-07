@@ -8,55 +8,97 @@
   }
 
 /* header */
-.header {
+
+.header__image-wrapper {
+    display: flex;
+    max-width: 150px;
+    justify-content: center;
+    padding: 4px 20px 0 8px;
+
+  }
+
+img{
+    display: block;
+    width: 92px;
+    height: 30px;
+}
+
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 32px;
+    height: 36px;
+    min-width: 54px;
     text-align: center;
+    cursor: pointer;
+    user-select: none;
   }
   
-.header__wrapper {
-    padding: 20px 20px 16px;
-}
+  .button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+  }
   
-.header__search-icon {
-    width: 20px;
-    height: 20px;
-    color: #9aa0a6;
-    fill: currentColor;
-}
-
-.header__search-wrapper {
+  .button--primary {
+    background: #1a73e8;
+    border: 1px solid transparent;
+    color: white;
+  }
+  
+  .button--primary:hover {
+    background: #2b7de9;
+    color: white;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3),
+      0 1px 3px 1px rgba(66, 133, 244, 0.15);
+  }
+  
+  .header {
     display: flex;
-    border: 1px solid #dfe1e5;
-    box-shadow: none;
-    border-radius: 24px;
-    height: 46px;
-    max-width: 584px;
+    font-size: 13px;
     align-items: center;
-    margin: auto;
-    margin-top: 6px;
-    padding-left: 14px;
-    padding-right: 8px;
-    margin-bottom: 18px;
-  }
-
-.header__search-wrapper:focus-within,
-  .header__search-wrapper:hover {
-    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-    border-color: rgba(223, 225, 229, 0);
+    height: 60px;
   }
   
-  .header__search {
-    width: 100%;
-    margin-left: 13px;
-    border: none;
-    outline: none;
+  .page__header {
+    justify-content: space-between;
+    padding: 6px 8px;
   }
-
-  .header__image-wrapper {
-    max-width: 50px;
-    max-height: 50px;
-    height: calc(100vh - 560px);
+  
+  .header__sign-in-wrapper {
     display: flex;
-    justify-content: flex-start;
+  }
+  
+  .header__app-icon {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .header__app-icon:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+    border-radius: 100%;
+  }
+  
+  .header__link {
+    padding-left: 15px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .header__button {
+    margin: 0 8px;
+    padding: 0 23px;
   }
 
 
