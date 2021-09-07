@@ -12,8 +12,7 @@
     "clean": "rm -rf dist",
     "build": "parcel build index.html 404.html",
     "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build && npm run dev"
   },
   "devDependencies": {
     "browser-sync": "^2.27.5",
