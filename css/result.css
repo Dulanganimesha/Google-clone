@@ -21,6 +21,7 @@
   font-size: 13px;
   align-items: center;
   height: 69px;
+  width: 100%;
 }
 
 .page__header {
@@ -111,26 +112,38 @@
   }
 
 /* main */
-.main {
-  position: absolute;
-  text-align: left;
-  top: 64px;  
-  left: 0;
-  right: 0;
+  .main {
+    clear: both;
+    position: absolute;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 180px;
+    width: 652px;
   }
   
   .main__wrapper {
     padding: 10px 4px 10px 4px;
   }
 
+  .gcse-searchresults-only{
+    position: relative;
+    margin-top: 0px;
+    clear: both;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+  }
+
 
 
 /* Footer */
 
-.footer page__footer{
-  position: absolute;
+.page__footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-  
+
 .footer__country {
     display: flex;
     padding: 15px 30px;
@@ -165,12 +178,5 @@
 
   .gcsc-branding-img-noclear{
       display: none;
-  }
-  
-  .page__footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
   }
 
