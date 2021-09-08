@@ -166,14 +166,22 @@
   .main__top{
     position: absolute;
     left: 100px;
-    background-color: yellow;
     width: 500px;
     height: 40px;
     padding-top: 10px;
   }
 
+  .link{
+    text-decoration: none;
+    color: #5f6368;
+  }
+
   .menu-item__icon{
     width: 16px;
+    padding-bottom: 2px;
+    color: #5f6368;
+    fill: currentColor;
+
   }
   
   .main__wrapper {
