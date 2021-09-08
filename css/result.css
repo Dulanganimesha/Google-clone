@@ -88,7 +88,7 @@
   .header__search-icon {
     width: 20px;
     height: 20px;
-    color: #9aa0a6;
+    color: #4285f4;
     fill: currentColor;
   }
   
@@ -98,13 +98,14 @@
     box-shadow: none;
     border-radius: 24px;
     height: 46px;
-    width: 504px;
+    width: 692px;
     align-items: center;
     margin: auto;
     margin-top: 25px;
     padding-left: 14px;
     padding-right: 8px;
     margin-bottom: 18px;
+    flex-flow: row-reverse;
   }
   
   .header__search-wrapper:focus-within,
@@ -114,7 +115,9 @@
   }
   
   .header__search {
-    width: 100%;
+    width: 622px;
+    height: 39px;
+    font-size: 16px;
     margin-right: 13px;
     border: none;
     outline: none;
@@ -154,22 +157,34 @@
     clear: both;
     position: absolute;
     text-align: left;
-    margin-top: 80px;
-    margin-left: 180px;
-    width: 652px;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .main__top{
+    position: absolute;
+    left: 100px;
+    background-color: yellow;
+    width: 500px;
+    height: 40px;
+    padding-top: 10px;
+  }
+
+  .menu-item__icon{
+    width: 16px;
   }
   
   .main__wrapper {
-    padding: 10px 4px 10px 4px;
+    padding: 30px 500px 10px 100px;
   }
   
 
   .gcse-searchresults-only{
-    position: relative;
-    margin-top: 0px;
-    clear: both;
-    font-size: 14px;
-    font-family: arial,sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
   }
 
 
@@ -177,10 +192,12 @@
 /* Footer */
 
 .page__footer {
-  position: fixed;
+  position: absolute;
+  top: 1924px;
   left: 0;
   right: 0;
   bottom: 0;
+  
 }
 
 .footer__country {
