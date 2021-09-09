@@ -20,12 +20,14 @@
   display: flex;
   font-size: 13px;
   align-items: center;
-  height: 69px;
+  top: 20px;
+  height: 400px;
   width: 100%;
 }
 
 .page__header {
   justify-content: space-between;
+  flex-direction: column-reverse;
   padding: 6px 8px 6px 15px;
 }
 
@@ -42,6 +44,13 @@
     display: block;
     width: 90px;
     height: 30px;
+}
+
+.header__side-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
 }
 
   .button {
@@ -94,18 +103,20 @@
   
   .header__search-wrapper {
     display: flex;
+    position: absolute;
     border: 1px solid #dfe1e5;
     box-shadow: none;
     border-radius: 24px;
-    height: 46px;
-    width: 692px;
+    height: 44px;
+    width: 690px;
     align-items: center;
-    margin: auto;
-    margin-top: 25px;
+    margin-top: 5px;
     padding-left: 14px;
     padding-right: 8px;
     margin-bottom: 18px;
     flex-flow: row-reverse;
+    top: 0;
+    left: 150px;
   }
   
   .header__search-wrapper:focus-within,
@@ -201,7 +212,7 @@
 
 .page__footer {
   position: absolute;
-  top: 1924px;
+  top: 2000px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -243,4 +254,67 @@
   .gcsc-branding-img-noclear{
       display: none;
   }
+
+
+  @media all and (max-width: 1200px) {
+    .page__footer {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+    }
+  }
+  
+  /* @media all and (max-width: 649px) {
+    .header{
+      background-color: yellow;
+      display: flex;
+      font-size: 12px;
+      height: 300px;
+      width: 100%;
+    }
+
+    .page__header {
+      flex-flow: wrap;
+    }
+    
+    .header__image-wrapper {
+      display: flex;
+      width: 150px;
+      height: 37px;
+      left: 400px;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 4px 20px 0 8px;
+    }
+  } 
+  
+  /* @media all and (max-width: 480px) {
+    .main__image-wrapper > img {
+      height: 72px;
+    }
+  }
+  
+  @media all and (max-width: 483px) {
+    .footer__menu:first-child {
+        display: none;
+    }
+  }
+  
+  @media all and (max-width: 319px) {
+    .page__footer {
+      margin-top: 26px;
+      position: relative;
+    }
+  }
+  
+  @media all and (max-height: 514px) {
+    .page__footer {
+      margin-top: 26px;
+      position: relative;
+    }
+
+  } */
 
